@@ -1,0 +1,105 @@
+/* FORMATO DE LA PAGINA, TEXTO Y COLORES*/
+* {
+  box-sizing: border-box;
+  margin: 8px;
+  padding: 5px;
+}
+body {
+  font-family: 'Segoe UI', Calibri, Tahoma, Verdana, sans-serif;
+  background-color: #cbcddd;
+  color: #1e293b;
+  line-height: 1.6;
+  padding: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* 2. ENCABEZADO DE LA PÁGINA */
+.header-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); /*colode degradante*/
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 12px; /* Redondea las esquinas de las cajas para que no se vean cuadrados*/
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header-section h1 {
+  font-size: 2.6rem; 
+  margin-bottom: 20px;
+}
+.header-section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border: 3px solid #ffffff; /*color de margen de la imagen*/
+}
+/* 3. CAJAS DE CONTENIDO (CONTENEDORES DIV) */
+.description-section,
+.reasons-section,
+.requirements-section {
+  background: #a6a5e6;  /*Define el color de las cajas*/
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 3px solid #0d5d11c9; /* Define el color del margen de las cajas*/
+}
+/* 4. TÍTULOS Y TEXTO */
+h2 {
+  color: #1e3a8a;
+  border-left: 5px solid #42099f;
+  padding-left: 12px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+p {
+  font-size: 1.05rem;
+  color: #18181a;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+/* 5. TEXTO RESALTADOS*/
+.highlight {
+  background-color: #de81bb; /* color de fondo para resaltar texto*/
+  color: #211d20; /* color de texto resaltaltado*/
+  padding: 2px 8px;
+  border-radius: 4px; /*redondeo de las esquinas del texto realtado*/
+  font-weight: 600;
+}
+/* 6. LISTAS */
+ul {
+  margin-left: 25px;
+  color: #0d5d11c9;
+}
+
+li {
+  margin-bottom: 12px;
+  font-size: 1rem; /*control automatico del texto*/
+}
+
+/* 7. TABLA DE REQUISITOS */
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: separate;
+  border-spacing: 5px;       /* define qué tan separados quedan bordes */
+  margin-top: 15px;
+  overflow: auto;
+ }
+
+th {
+  background-color: #42099f; /*color del item de cada una de las tablas*/
+  color: #f2ef3c80; /*Color del texto*/
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 2px solid #32b5bd;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 2px solid #32b5bd;
+  color: #42099f; 
+}
+
+tr:hover {
+  background-color: #32b5bd;/* Define el color de fondo de la celda al posiconarse para leer*/
+}
